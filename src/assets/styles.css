@@ -1,11 +1,15 @@
 /* List of imports */
+@import url('https://fonts.googleapis.com/css?family=Funnel+Display');
 @import url('https://fonts.googleapis.com/css?family=Limelight');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 
 /* Global styles. */
-body {
+body, html {
+    background-image: url('background.jpg');
     font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -13,23 +17,28 @@ body {
 .navbar {
     display: flex;
     flex-direction: row;
-    position: fixed;
-    top: 0;
-    right: 0;
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 70px;
+    background-color: #FFF;
 }
 
 .navbar-link {
     color: black;
-    background-color: #FFF;
-    width: 100px;
-    padding: 25px 10px;
-    text-decoration: none;
-    text-align: center;
     display: block;
+    padding: 25px 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
 }
 
 .navbar-link:hover {
@@ -37,9 +46,27 @@ body {
 }
 
 .navbar-logo {
-    line-height: 40px;
-    padding: 0 15px;
     font-family: 'Limelight';
+    font-size: 1.5em;
+    height: 25px;
+    margin: 0;
+    padding: 22px 30px;
+    width: 50px;
+}
+
+.navbar-logo:hover {
+   cursor: pointer;
+}
+
+
+/* Home element styles. */
+.home-bio {
+    font-family: 'Funnel Display';
     font-size: 1.5em;
 }
 
+.home-title {
+    font-family: 'Funnel Display';
+    font-size: 3em;
+    font-weight: 900;
+}
