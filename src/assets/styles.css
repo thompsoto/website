@@ -1,0 +1,45 @@
+/* List of imports */
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+/* Global styles. */
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+/* NavBar component styles. */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-link {
+    color: black;
+    background-color: #FFF;
+    width: 100px;
+    padding: 25px 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.navbar-link:hover {
+    background-color: #F0F0F0;
+}
+
+.navbar-logo {
+    line-height: 40px;
+    padding: 0 15px;
+    font-family: 'Limelight';
+    font-size: 1.5em;
+}
+
