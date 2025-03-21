@@ -1,12 +1,17 @@
 import './assets/styles.css';
-import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-        <NavBar/>
-        <p className="home-title">Hi, I'm Mateo 👋<br></br>Software Engineer</p>
-        <p className="home-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div className='navbar'>
+      <div className='navbar-container'>
+        <img src={require('./assets/icon.png')} alt='icon' className='icon'/>
+        <ul className='navbar-menu'>
+          <li className='navbar-menu-item'>Projects</li>
+          <li className='navbar-menu-item'>Resume</li>
+          <li className='navbar-menu-item'>Contact</li>
+        </ul>
+
+      </div>
     </div>
   );
 }

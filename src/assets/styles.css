@@ -1,72 +1,41 @@
-/* List of imports */
-@import url('https://fonts.googleapis.com/css?family=Funnel+Display');
-@import url('https://fonts.googleapis.com/css?family=Limelight');
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-
-
-/* Global styles. */
-body, html {
-    background-image: url('background.jpg');
-    font-family: 'Source Code Pro', monospace;
-    margin: 0;
-    padding: 0;
+body {
+    background-color: #171717;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
 }
 
-
-/* NavBar component styles. */
 .navbar {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
+    display: block;
+    margin: auto;
+    width: 30%;
+    padding-top: 10px;
 }
 
 .navbar-container {
-    width: 100%;
-    height: 70px;
-    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar-link {
-    color: black;
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-menu-item {
+    color: gray;
     display: block;
-    padding: 25px 10px;
-    text-align: center;
-    text-decoration: none;
-    width: 100px;
+    font-size: 18px;
+    padding: 0 10px 0 10px;
 }
 
-.navbar-link:hover {
-    background-color: #F0F0F0;
+.navbar-menu-item:hover {
+    color: white;
+    cursor: pointer;
 }
 
-.navbar-logo {
-    font-family: 'Limelight';
-    font-size: 1.5em;
-    height: 25px;
-    margin: 0;
-    padding: 22px 30px;
-    width: 50px;
-}
-
-.navbar-logo:hover {
-   cursor: pointer;
-}
-
-
-/* Home element styles. */
-.home-bio {
-    font-family: 'Funnel Display';
-    font-size: 1.5em;
-}
-
-.home-title {
-    font-family: 'Funnel Display';
-    font-size: 3em;
-    font-weight: 900;
+.icon {
+    width: 40px;
+    height: 33px;
 }
