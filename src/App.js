@@ -1,12 +1,6 @@
 import './assets/styles.css';
 import generateSubtitle from './scripts/subtitle';
 
-// Ensure the DOM is fully loaded before the script runs
-document.addEventListener('DOMContentLoaded', () => {
-    // The subtitle.js file already sets up the interval to update the subtitle
-    console.log('Subtitle generator initialized.');
-});
-
 function App() {
   return (
     <>
